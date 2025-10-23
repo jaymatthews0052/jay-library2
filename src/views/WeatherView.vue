@@ -2,7 +2,7 @@
   // The info section in 10.1.1 provided detailed information about this package 
   import axios from "axios";
 
-  const apikey = "95d8ad3eec898f5cf3103b1d1462c306";
+  const apikey = import.meta.env.WEATHER_API_KEY;
   
   export default {
     name: "App",
