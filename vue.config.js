@@ -1,8 +1,5 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-export default defineConfig({
-  plugins: [vue()],
-  // Must match your repo name exactly
-  base: '/jay-library2/',
-})
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/jay-library2/'
+    : '/'
+}
